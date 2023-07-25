@@ -1,3 +1,6 @@
 # C#, If / else loops methods
-### Task 1, 2
+### Task 0, 1
 Standard if, else if, else statements.
+
+### Task 2
+Stardard for loop.
