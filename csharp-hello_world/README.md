@@ -20,3 +20,14 @@ There are many format specifiers you can use, like `ToString("F2")` to write a d
 ### Task 6, 7, 8
 You can concatenate variables in a Console.WriteLine statement using a '+', for example: <br>
 `Console.WriteLine(str + str + 8);` will print str 2 times followed by 8 and a newline.
+
+### Task 9
+You can use string interpolation when using Console.WriteLine().<br>
+It allows you to embed expressions, variables, or values directly within a string using curly braces and the dollar sign prefix.<br>
+For example : `Console.WriteLine($"Hello, {name}!")`.<br>
+You can also specify formats, for example :
+```
+double percent = .7553;
+Console.WriteLine($"Percent: {percent:P2}");
+Output: Percent: 75.53 %
+```
