@@ -7,3 +7,6 @@ Stardard for loop.
 
 ### Task 4
 To convert an int into its hexadecimal representation use `number.ToString("x")`.
+
+### Task 5
+To specify a minimum number of digits of a int, use `number.ToString("Dn")`, n being the number of digits.
