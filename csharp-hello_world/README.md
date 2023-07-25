@@ -31,3 +31,6 @@ double percent = .7553;
 Console.WriteLine($"Percent: {percent:P2}");
 Output: Percent: 75.53 %
 ```
+
+### Task 10
+Use string.Substring(int start index, [end index]) to perform specific actions on a string.
