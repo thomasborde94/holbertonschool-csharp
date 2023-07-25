@@ -32,5 +32,5 @@ Console.WriteLine($"Percent: {percent:P2}");
 Output: Percent: 75.53 %
 ```
 
-### Task 10
-Use string.Substring(int start index, [end index]) to perform specific actions on a string.
+### Task 10, 11
+Use string.Substring(int start index, [length]) to extract a substring of a given string.
