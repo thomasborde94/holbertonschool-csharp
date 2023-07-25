@@ -2,5 +2,5 @@
 ### Task 0, 1
 Standard if, else if, else statements.
 
-### Task 2
+### Task 2, 3
 Stardard for loop.
