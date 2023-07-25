@@ -12,3 +12,7 @@ explicitly use `dotnet build` then `dotnet run`.
 
 ### Task 3, 4
 Use Console.WriteLine() to print anything, followed by a newline.
+
+### Task 5
+The ToString() method converts an object into its string representation.<br>
+There are many format specifiers you can use, like `ToString("F2")` to write a decimal number with a precision of 2 digits.
