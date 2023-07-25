@@ -10,5 +10,5 @@ To build (compile) a project, use `dotnet build [options] [project-file]`.
 To run a project, use `dotnet run`. It will build and run the project, you don't need to
 explicitly use `dotnet build` then `dotnet run`.
 
-### Task 3
-Use Console.WriteLine() to print strings.
+### Task 3, 4
+Use Console.WriteLine() to print anything, followed by a newline.
