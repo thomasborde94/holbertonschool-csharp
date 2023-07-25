@@ -34,3 +34,7 @@ Output: Percent: 75.53 %
 
 ### Task 10, 11
 Use string.Substring(int start index, [length]) to extract a substring of a given string.
+
+### Task 12
+Use `Console.Error.WriteLine()` to print to stderr.<br>
+Use `Environment.Exit(int exit code)` to terminate the application with the specified exit code.
