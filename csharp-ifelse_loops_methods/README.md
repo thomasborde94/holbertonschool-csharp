@@ -10,3 +10,6 @@ To convert an int into its hexadecimal representation use `number.ToString("x")`
 
 ### Task 5
 To specify a minimum number of digits of a int, use `number.ToString("Dn")`, n being the number of digits.
+
+### Task 11
+Nested loops
