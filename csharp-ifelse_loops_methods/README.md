@@ -2,7 +2,7 @@
 ### Task 0, 1, 7
 Standard if, else if, else statements.
 
-### Task 2, 3, 6
+### Task 2, 3, 6, 10
 Standard for loops.
 
 ### Task 4
