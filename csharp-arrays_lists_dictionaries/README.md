@@ -49,3 +49,15 @@ To check if a key already exists in a dictionary, use `myDict.ContainsKey(key)`.
 
 ### Task 10
 To remove a key in a dictionary, use `myDict.Remove(key);`.
+
+### Task 11
+You can't change a value inside of a foreach loop, as the value variable in the loop is a copy of the actual value in the dictionary. So this wouldn't work:
+```
+foreach (int value in myDict.Values)
+        {
+            value = value * 2;
+        }
+        return myDict;
+```
+This is because the foreach loop uses an enumerator to iterate over the collection, and this enumerator doesn't allow you to modify the collection while iterating.<br>
+But you can add or remove key-value pairs during the foreach loop, as long as you do it through a separate collection or by creating a new dictionary.
