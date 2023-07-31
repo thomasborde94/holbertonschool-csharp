@@ -15,5 +15,5 @@ There is a difference between a null array and an array that is empty.<br>
 In both cases, and for any arrays, you can't change its size after initialization.
 
 ### Task 4
-To create an list of ints : `List<int> list = new List<int>();`. <br>
-To add an element in a list, use `list.Add();`
+To create a list of ints : `List<int> list = new List<int>();`. <br>
+To add an element in a list, use `list.Add();`.
