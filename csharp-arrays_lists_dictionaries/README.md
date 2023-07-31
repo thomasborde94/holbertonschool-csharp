@@ -62,3 +62,7 @@ foreach (int value in myDict.Values)
 ```
 This is because the foreach loop uses an enumerator to iterate over the collection, and this enumerator doesn't allow you to modify the collection while iterating.<br>
 But you can add or remove key-value pairs during the foreach loop, as long as you do it through a separate collection or by creating a new dictionary.
+
+### Task 12
+It can be useful to get the key or values from a dictionary inside a List: `List<string> keyList = new List<string>(myDict.Keys);`.<br>
+Here we create a list of strings from the keys of the dictionary myDict which are also strings.
