@@ -69,3 +69,23 @@ Here we create a list of strings from the keys of the dictionary myDict which ar
 
 ### Task 14
 You can get the number of elements in the specified dimension of an array using `array.GetLength(int)`.
+
+### Task 100
+The following is a declaration of a single-dimensional array that has three elements, each of which is a single-dimensional array of integers:
+`int[][] jaggedArray = new int[3][];`.<br>
+Before you can use jaggedArray, its elements must be initialized. You can initialize the elements like this:
+```
+jaggedArray[0] = new int[5];
+jaggedArray[1] = new int[4];
+jaggedArray[2] = new int[2];
+```
+<br>
+You can also initialize the array upon declaration like this:
+```
+int[][] jaggedArray2 = new int[][]
+{
+new int[] { 1, 3, 5, 7, 9 },
+new int[] { 0, 2, 4, 6 },
+new int[] { 11, 22 }
+};
+```
