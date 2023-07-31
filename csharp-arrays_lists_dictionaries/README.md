@@ -17,3 +17,7 @@ In both cases, and for any arrays, you can't change its size after initializatio
 ### Task 4
 To create a list of ints : `List<int> list = new List<int>();`. <br>
 To add an element in a list, use `list.Add();`.
+
+### Task 7
+To remove an element by index, use : `list.RemoveAt(index)`.<br>
+To remove an element by value, use : `list.Remove(value)`.
