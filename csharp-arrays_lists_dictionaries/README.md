@@ -42,3 +42,6 @@ To get the keys alone, use the Keys property.
 ```
 Dictionary<string, string>.KeyCollection keyColl = openWith.Keys;
 ```
+
+### Task 9
+To add a Key in a dictionary, use `dictionary.Add(key, value)`.
