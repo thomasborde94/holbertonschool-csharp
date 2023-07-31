@@ -13,3 +13,7 @@ To replace an element in an array : `array[index] = n;`.
 There is a difference between a null array and an array that is empty.<br>
 `int[] array2 = null;` is null. Whereas `int[] array3 = {};` simply has a length of 0.<br>
 In both cases, and for any arrays, you can't change its size after initialization.
+
+### Task 4
+To create an list of ints : `List<int> list = new List<int>();`. <br>
+To add an element in a list, use `list.Add();`
