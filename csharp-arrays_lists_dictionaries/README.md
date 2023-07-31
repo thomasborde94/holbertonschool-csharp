@@ -20,7 +20,7 @@ To add an element in a list, use `list.Add();`.
 
 ### Task 7
 To remove an element by index, use : `list.RemoveAt(index)`.<br>
-To remove an element by value, use : `list.Remove(value)`.
+To remove an element by value, use : `list.Remove(value)`, or `myList.Remove(myList[index])`.
 
 ### Task 8
 To create a Dictionary of strings : `Dictionary<string, string> openWith = new Dictionary<string, string>();`. <br>
