@@ -66,3 +66,6 @@ But you can add or remove key-value pairs during the foreach loop, as long as yo
 ### Task 12
 It can be useful to get the key or values from a dictionary inside a List: `List<string> keyList = new List<string>(myDict.Keys);`.<br>
 Here we create a list of strings from the keys of the dictionary myDict which are also strings.
+
+### Task 14
+You can get the number of elements in the specified dimension of an array using `array.GetLength(int)`.
