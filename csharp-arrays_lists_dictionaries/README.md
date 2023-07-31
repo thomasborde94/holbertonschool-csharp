@@ -21,3 +21,24 @@ To add an element in a list, use `list.Add();`.
 ### Task 7
 To remove an element by index, use : `list.RemoveAt(index)`.<br>
 To remove an element by value, use : `list.Remove(value)`.
+
+### Task 8
+To create a Dictionary of strings : `Dictionary<string, string> openWith = new Dictionary<string, string>();`. <br>
+When you use foreach to enumerate dictionary elements, the elements are retrieved as KeyValuePair objects:
+```
+foreach( KeyValuePair<string, string> kvp in openWith )
+{
+    Console.WriteLine("Key = {0}, Value = {1}", kvp.Key, kvp.Value);
+}
+// Output :
+Key = txt, Value = notepad.exe
+Key = bmp, Value = paint.exe
+```
+To get the values alone, use the Values property.
+```
+Dictionary<string, string>.ValueCollection valueColl = openWith.Values;
+```
+To get the keys alone, use the Keys property.
+```
+Dictionary<string, string>.KeyCollection keyColl = openWith.Keys;
+```
