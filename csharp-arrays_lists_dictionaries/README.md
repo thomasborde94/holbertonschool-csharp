@@ -46,3 +46,6 @@ Dictionary<string, string>.KeyCollection keyColl = openWith.Keys;
 ### Task 9
 To add a Key in a dictionary, use `dictionary.Add(key, value)`.<br>
 To check if a key already exists in a dictionary, use `myDict.ContainsKey(key)`.
+
+### Task 10
+To remove a key in a dictionary, use `myDict.Remove(key);`.
