@@ -12,3 +12,10 @@ To count the items of a stack, use `aStack.Count`.<br>
 To get the top item of a stack, use `var topItem = aStack.Peek()`.<br>
 To remove the top item of a stack, use `aStack.Pop()`.<br>
 To add a new item at the top of a stack, use `aStack.Push()`.
+
+### Task 4
+To create a Queue, use `Queue<string> aQueue = new Queue<string>();`.<br>
+To count the items of a queue, use `aQueue.Count`.<br>
+To get the top item of a queue, use `var topItem = aQueue.Peek()`.<br>
+To remove the top item of a queue, use `aStack.Dequeue()`.<br>
+To add a new item at the top of a queue, use `aStack.Enqueue()`.
