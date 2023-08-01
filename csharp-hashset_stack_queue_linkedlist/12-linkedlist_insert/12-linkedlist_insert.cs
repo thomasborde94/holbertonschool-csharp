@@ -14,14 +14,12 @@ class LList
                 if (n < current.Value)
                 {
                     myLList.AddBefore(current, newNode);
-                    Console.WriteLine("first if");
                     break;
                 }
 
             if (n > current.Value && n < current.Next.Value)
             {
                 myLList.AddAfter(current, newNode);
-                Console.WriteLine("second if");
                 break;
             }
 
@@ -29,7 +27,6 @@ class LList
             if (n > current.Value && current.Next == null)
             {
                 myLList.AddAfter(current, newNode);
-                Console.WriteLine("third if");
                 break;
             }
             current = current.Next;
