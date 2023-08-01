@@ -24,6 +24,12 @@ class LList
                 break;
             }
 
+            // If n has a value of an already existing node
+            if (n == current.Value)
+            {
+                myLList.AddAfter(current, newNode);
+                break;
+            }
             // Any other case
             if (n > current.Value && n < current.Next.Value)
             {
