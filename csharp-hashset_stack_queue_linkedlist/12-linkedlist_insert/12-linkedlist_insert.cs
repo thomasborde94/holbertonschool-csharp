@@ -17,14 +17,15 @@ class LList
                     break;
                 }
 
-            if (n > current.Value && n < current.Next.Value)
+            // If n is the biggest value
+            if (n > current.Value && current.Next == null)
             {
                 myLList.AddAfter(current, newNode);
                 break;
             }
 
-            // If n is the biggest value
-            if (n > current.Value && current.Next == null)
+            // Any other case
+            if (n > current.Value && n < current.Next.Value)
             {
                 myLList.AddAfter(current, newNode);
                 break;
