@@ -19,3 +19,14 @@ To count the items of a queue, use `aQueue.Count`.<br>
 To get the top item of a queue, use `var topItem = aQueue.Peek()`.<br>
 To remove the top item of a queue, use `aStack.Dequeue()`.<br>
 To add a new item at the top of a queue, use `aStack.Enqueue()`.
+
+### Task 5
+To create a LinkedList, use `LinkedList<string> myList = new LinkedList<string>();`.<br>
+To add an item to the beginning of the linked list, use `myList.AddFirst(item)`.<br>
+To add an item to the end of the linked list, use `myList.AddLast(item)`.<br>
+To move the first node to be the last node:
+```
+LinkedListNode<string> mark1 = sentence.First;
+sentence.RemoveFirst();
+sentence.AddLast(mark1);
+```
