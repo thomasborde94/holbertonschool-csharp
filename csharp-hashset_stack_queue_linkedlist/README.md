@@ -42,3 +42,7 @@ To remove the first node of a linkedList, use `myLList.RemoveFirst();`.<br>
 To remove the last node of a linkedList, use `myLList.RemoveLast();`.<br>
 To remove the first occurence of the specified value from a linkedlist, use `myLList.Remove(value)`.<br>
 To remove all the nodes, use `myLList.Clear()`.
+
+### Task 12
+To add a node after a specific node, use `myLList.AddAfter(current, value);`, where current is the node after which we want to insert the new one, and value is the value of the new node. You can also use `myLList.AddAfter(current, node);`, where node is the node to add. <br>
+To add a node before a specific node, use `myLList.AddBefore(current, value);`, or `myLList.AddBefore(current, node);`.
