@@ -36,3 +36,9 @@ To create a Node, use `LinkedListNode<String> lln = new LinkedListNode<String>( 
 To get the first node of a linkedList, use `LinkedListNode<int> current = myLList.First;`.<br>
 To go to the next node, use `current.Next`. To go to the previous node, use `current.Previous`.<br>
 To get the value contained in the node, use `current.Value`. To get a reference to the value held by the node, use `current.ValueRef`.
+
+### Task 9
+To remove the first node of a linkedList, use `myLList.RemoveFirst();`.<br>
+To remove the last node of a linkedList, use `myLList.RemoveLast();`.<br>
+To remove the first occurence of the specified value from a linkedlist, use `myLList.Remove(value)`.<br>
+To remove all the nodes, use `myLList.Clear()`.
