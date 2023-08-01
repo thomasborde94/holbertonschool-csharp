@@ -30,3 +30,9 @@ LinkedListNode<string> mark1 = sentence.First;
 sentence.RemoveFirst();
 sentence.AddLast(mark1);
 ```
+
+### Task 6
+To create a Node, use `LinkedListNode<String> lln = new LinkedListNode<String>( "orange" );`.<br>
+To get the first node of a linkedList, use `LinkedListNode<int> current = myLList.First;`.<br>
+To go to the next node, use `current.Next`. To go to the previous node, use `current.Previous`.<br>
+To get the value contained in the node, use `current.Value`. To get a reference to the value held by the node, use `current.ValueRef`.
