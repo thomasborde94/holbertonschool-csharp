@@ -41,6 +41,7 @@ To get the value contained in the node, use `current.Value`. To get a reference 
 To remove the first node of a linkedList, use `myLList.RemoveFirst();`.<br>
 To remove the last node of a linkedList, use `myLList.RemoveLast();`.<br>
 To remove the first occurence of the specified value from a linkedlist, use `myLList.Remove(value)`.<br>
+To remove the specified node, use `myLList.Remove(node)`, where node is the node to remove.<br>
 To remove all the nodes, use `myLList.Clear()`.
 
 ### Task 12
