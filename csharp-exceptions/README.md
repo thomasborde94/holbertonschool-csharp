@@ -13,7 +13,7 @@ Code in a finally block is executed regardless of if an exception is thrown. Use
     
 __try__ – A try block is used to encapsulate a region of code. If any code throws an exception within that try block, the exception will be handled by the corresponding catch.<br>
 __catch__ – When an exception occurs, the Catch block of code is executed. This is where you are able to handle the exception, log it, or ignore it.<br>
-__finally__ – The finally block allows you to execute certain code if an exception is thrown or not. For example, disposing of an object that must be disposed of.
+__finally__ – The finally block allows you to execute certain code if an exception is thrown or not. For example, disposing of an object that must be disposed of.<br>
 __throw__ – The throw keyword is used to actually create a new exception that is the bubbled up to a try catch finally block.<br>
 
 ## Programmers should throw exceptions when one or more of the following conditions are true:
