@@ -1,5 +1,5 @@
 # Structs, Enumerations
-## Structs
+## Enum
 To declare an enum, use this :
 ```
 public enum Rating
