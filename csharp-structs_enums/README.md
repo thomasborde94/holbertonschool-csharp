@@ -23,3 +23,15 @@ Output :
 Great
 1
 ```
+
+## Structs
+To declare a simple struct, use : 
+```
+struct Dog
+{
+    public string name;
+    public float age;
+    public string owner;
+    public Rating rating;
+}
+```
