@@ -50,3 +50,19 @@ To call the constructor, use:
 ```
 Dog dog1 = new Dog(args);
 ```
+
+To override the `ToString` method in your class or struct:<br>
+* Declare a ToString method with the following modifiers and return type:
+```
+public override string ToString()
+{
+
+}
+```
+* Implement the method so that it returns a string. For example:
+```
+public override string ToString()
+{
+    return "Person: " + Name + " " + Age;
+}
+```
