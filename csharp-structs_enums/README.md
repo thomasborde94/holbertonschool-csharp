@@ -35,3 +35,18 @@ struct Dog
     public Rating rating;
 }
 ```
+
+The constructor of a struct is called everytime a new struct instance is created using the keyword `new`.<br>
+A constructor looks like this:
+```
+public Dog(string aName, float aAge, string aOwner)
+    {
+        name = aName;
+        age = aAge;
+        owner = aOwner;
+    }
+```
+To call the constructor, use:
+```
+Dog dog1 = new Dog(args);
+```
