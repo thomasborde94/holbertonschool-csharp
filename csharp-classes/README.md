@@ -56,3 +56,12 @@ public Zombie(int value)
                 throw new ArgumentException("Health must be greater than or equal to 0");
         }
 ```
+### Properties
+Allows to get or set a field's value:
+```
+public string Name
+        {
+            get { return name; }
+            set { name = value;}
+        }
+```
