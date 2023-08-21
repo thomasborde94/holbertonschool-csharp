@@ -43,3 +43,16 @@ class AnotherSampleClass
     }
 }
 ```
+
+## Classes
+### Constructors
+Use constructors to define an instance's properties, with restrictions or not:
+```
+public Zombie(int value)
+        {
+            if (value >= 0)
+                health = value;
+            else
+                throw new ArgumentException("Health must be greater than or equal to 0");
+        }
+```
