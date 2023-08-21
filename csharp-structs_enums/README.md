@@ -66,3 +66,10 @@ public override string ToString()
     return "Person: " + Name + " " + Age;
 }
 ```
+Or using the string.Format():
+```
+public override string ToString()
+        {
+            return string.Format("Zombie Name: {0} / Total Health: {1}", this.Name, GetHealth());
+        }
+```
