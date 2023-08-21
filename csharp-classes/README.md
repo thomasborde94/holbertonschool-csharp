@@ -1,5 +1,10 @@
 # Classes and Namespaces
 ## XML Documentation
+To enable XML documentation in your project, you must add this line to the PropertyGroup in your .csproj file:
+```
+<DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
+```
+
 Use `dotnet build --configuration Debug` to generate the xml documentation file in the Debug folder.<br>
 By adding meaningful comments to your code and generating an XML documentation file, you create a self-documenting codebase. The documentation file provides context, usage details, and explanations for classes, methods, properties, and other code elements. This makes it easier for developers to understand how to use your code effectively.
 ## Namespaces

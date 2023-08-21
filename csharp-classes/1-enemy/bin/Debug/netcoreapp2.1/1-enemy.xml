@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>1-enemy</name>
+    </assembly>
+    <members>
+        <member name="T:Enemies.Zombie">
+            <summary>
+            Represents a Zombie
+            </summary>
+        </member>
+        <member name="F:Enemies.Zombie.health">
+            <summary>
+            The zombie's health
+            </summary>
+        </member>
+        <member name="M:Enemies.Zombie.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of Zombie
+            </summary>
+            <param name="aHealth">The zombie's health</param>
+        </member>
+    </members>
+</doc>
