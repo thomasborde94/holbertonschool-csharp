@@ -1,4 +1,7 @@
 # Classes and Namespaces
+## XML Documentation
+Use `dotnet build --configuration Debug` to generate the xml documentation file in the Debug folder.<br>
+By adding meaningful comments to your code and generating an XML documentation file, you create a self-documenting codebase. The documentation file provides context, usage details, and explanations for classes, methods, properties, and other code elements. This makes it easier for developers to understand how to use your code effectively.
 ## Namespaces
 Namespaces are heavily used in C# programming in two ways. First, .NET uses namespaces to organize its many classes, as follows:
 ```
