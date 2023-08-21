@@ -7,18 +7,15 @@ namespace Enemies
     /// </summary>
     public class Zombie
     {
-        /// <summary>
-        /// The zombie's health
-        /// </summary>
+        /// <summary>The zombie's health</summary>
         public int health;
 
         /// <summary>
         /// Creates a Zombie object
         /// </summary>
-        /// <param name="aHealth">The zombie's health</param>
-        public Zombie(int aHealth = 0)
+        public Zombie()
         {
-            health = aHealth;
+            health = 0;
         }
     }
 }
