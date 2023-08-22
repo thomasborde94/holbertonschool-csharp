@@ -11,9 +11,9 @@ namespace MyMath.Tests
         public void Divide_MatrixIsNull_ReturnNull()
         {
             // Arrange
-            int[,] result = null;
+            int[,] baseMatrix = null;
             // Act
-            Matrix.Divide(result, 2);
+            int[,] result = Matrix.Divide(baseMatrix, 2);
             // Assert
             Assert.AreEqual(null, result);
         }
