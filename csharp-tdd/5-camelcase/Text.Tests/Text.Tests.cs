@@ -37,5 +37,16 @@ namespace Text.Tests
             // Assert
             Assert.AreEqual(wordcount, 1);
         }
+
+        [Test]
+        public void CamelCase_TwoWords_ReturnsTwo()
+        {
+            // Arrange
+            string s = "helloJohn";
+            // Act
+            int wordcount = Str.CamelCase(s);
+            // Assert
+            Assert.AreEqual(wordcount, 2);
+        }
     }
 }
