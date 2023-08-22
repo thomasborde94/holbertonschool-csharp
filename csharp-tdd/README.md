@@ -7,8 +7,8 @@
 * The target framework for this standard class library should be netstandard2.0
 * Change directory back to the root directory of the task (ex: 0-add) and run `dotnet sln add <classlibrary/classlibrary.csproj>` (ex. `dotnet sln add MyMath/MyMath.csproj`).
 * Create a new directory for your tests based on the namespace given plus .Tests (ex: MyMath.Tests). This directory will hold your test library.
-* The target framework for this library should be netcoreapp2.1
 * Inside that directory, run `dotnet new nunit`. Rename the resulting .cs file after the namespace of classes you are testing plus .Tests (ex: MyMath.Tests.cs).
+* The target framework for this library should be netcoreapp2.1
 * To add your class library as a dependency to the project, run `dotnet add reference <../classlibrary/classlibrary.csproj>` (ex: `dotnet add reference ../MyMath/MyMath.csproj`).
 * In the task’s root directory, run `dotnet sln add <testlibrary/testlibrary.csproj>` (ex: `dotnet sln add MyMath.Tests/MyMath.Tests.csproj`).
 * If you’d like to run your class library method in a console application, create a new directory and run dotnet new console inside it. Run `dotnet add reference <../classlibrary/classlibrary.csproj>` and you can then call your class library methods inside the console application.<br>
