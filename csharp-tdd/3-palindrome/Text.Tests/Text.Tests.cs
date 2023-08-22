@@ -26,5 +26,16 @@ namespace Text.Tests
             // Assert
             Assert.False(isPalindrome);
         }
+
+        [Test]
+        public void IsPalindrome_EmptyString_ReturnFalse()
+        {
+            // Arrange
+            string s = "";
+            // Act
+            bool isPalindrome = Str.IsPalindrome(s);
+            // Assert
+            Assert.True(isPalindrome);
+        }
     }
 }
