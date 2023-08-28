@@ -14,3 +14,11 @@ public static bool IsInstanceOfArray(object obj)
         return obj is Array;
     }
 ```
+
+To verify if an object is an instance of a class that inherits from a specified class, use `IsSubclassOf()`. For example:
+```
+public static bool IsOnlyASubclass(Type derivedType, Type baseType)
+    {
+        return derivedType.IsSubclassOf(baseType);
+    }
+```
