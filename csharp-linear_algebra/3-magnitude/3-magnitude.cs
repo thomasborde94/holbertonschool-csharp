@@ -1,7 +1,15 @@
 ﻿using System;
 
+/// <summary>
+/// Defines the VectorMath class
+/// </summary>
 class VectorMath
 {
+    /// <summary>
+    /// Calculates the length of a given vector
+    /// </summary>
+    /// <param name="vector">vector to calculate length of</param>
+    /// <returns>Length of vector</returns>
     public static double Magnitude(double[] vector)
     {
         if (vector.Length > 3 || vector.Length < 2)
