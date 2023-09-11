@@ -3,7 +3,8 @@
 * Create a solution file using `dotnet new sln` inside task directory.
 * Create a new directory for your task solution based on the namespace given (ex: MyMath). This directory will hold your new standard class library.
 * Inside that directory, run `dotnet new classlib`. Rename the resulting .cs file after the namespace (ex: MyMath.cs).
-* Enable XML documentation by adding <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile> to MyMath.csproj.
+* Enable XML documentation by adding `<DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>`
+ to MyMath.csproj.
 * The target framework for this standard class library should be netstandard2.0
 * Change directory back to the root directory of the task (ex: 0-add) and run `dotnet sln add <classlibrary/classlibrary.csproj>` (ex. `dotnet sln add MyMath/MyMath.csproj`).
 * Create a new directory for your tests based on the namespace given plus .Tests (ex: MyMath.Tests). This directory will hold your test library.
