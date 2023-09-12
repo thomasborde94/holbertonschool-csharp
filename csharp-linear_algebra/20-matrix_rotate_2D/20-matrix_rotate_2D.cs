@@ -18,6 +18,7 @@ class MatrixMath
             return error;
 
         double[,] result = new double[2, 2];
+        double sum = 0.0;
         double[,] rotationMatrix = new double[2, 2]
             {
                 {Math.Cos(angle), Math.Sin(angle)},
@@ -32,19 +33,11 @@ class MatrixMath
 
                 for (int k = 0; k < matrix.GetLength(1); k++)
                 {
-                    //result[i, j] += Math.Round(matrix[i, k] * rotationMatrix[k, j], 2);
-                    result[i, j] += matrix[i, k] * rotationMatrix[k, j];
+                    result[i, j] += Math.Round(matrix[i, k] * rotationMatrix[k, j], 2);
                 }
             }
         }
 
-        for (int i = 0; i < result.GetLength(0); i++)
-        {
-            for (int j = 0; j < result.GetLength(1); j++ )
-            {
-                result[i, j] = Math.Round(result[i, j], 2);
-            }
-        }
         return result;
     }
 }
