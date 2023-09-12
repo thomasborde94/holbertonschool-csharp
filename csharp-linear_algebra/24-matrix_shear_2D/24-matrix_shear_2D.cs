@@ -6,6 +6,33 @@
 class MatrixMath
 {
     /// <summary>
+    /// Calculates the X-shear of a point
+    /// </summary>
+    /// <param name="xValue">original x value</param>
+    /// <param name="yValue">original y value</param>
+    /// <param name="factor">shear factor</param>
+    /// <returns>new coordinates of the point</returns>
+    public static double[] ShearX(double xValue, double yValue, double factor)
+    {
+        double xResult = xValue + yValue * factor;
+        return new double[] { xResult, yValue};
+    }
+
+    /// <summary>
+    /// Calculates the Y-shear of a point
+    /// </summary>
+    /// <param name="xValue">original x value</param>
+    /// <param name="yValue">original y value</param>
+    /// <param name="factor">shear factor</param>
+    /// <returns>new coordinates of the point</returns>
+    public static double[] ShearY(double xValue, double yValue, double factor)
+{
+    double yResult = yValue + factor * xValue;
+    return new double[] { xValue, yResult };
+}
+
+
+    /// <summary>
     /// Shears a square 2DMatrix
     /// </summary>
     /// <param name="matrix">matrix to shear</param>
@@ -21,34 +48,26 @@ class MatrixMath
             return error;
 
         double[,] result = new double[2, 2];
-        double[,] directionMatrix = new double[2, 2];
-        double[,] xShear = new double[2, 2]
-        {
-            {1, factor},
-            {0, 1}
-        };
-        double[,] yShear = new double[2, 2]
-        {
-            {1, 0},
-            {factor, 1}
-        };
+
         if (direction == 'x')
-            directionMatrix = xShear;
-        if (direction == 'y')
-            directionMatrix = yShear;
-
-        for (int i = 0; i < matrix.GetLength(0); i++)
-        {
-            for (int j = 0; j < directionMatrix.GetLength(1); j++)
             {
-                result[i, j] = 0;
-
-                for (int k = 0; k < directionMatrix.GetLength(1); k++)
-                {
-                    result[i, j] += Math.Round(directionMatrix[i, k] * matrix[k, j], 2);
-                }
+                double[] pointA = ShearX(matrix[0, 0], matrix[0, 1], factor);
+                double[] pointB = ShearX(matrix[1, 0], matrix[1, 1], factor);
+                result[0, 0] = pointA[0];
+                result[0, 1] = pointA[1];
+                result[1, 0] = pointB[0];
+                result[1, 1] = pointB[1];
             }
-        }
+
+        if (direction == 'y')
+            {
+                double[] pointA = ShearY(matrix[0, 0], matrix[0, 1], factor);
+                double[] pointB = ShearY(matrix[1, 0], matrix[1, 1], factor);
+                result[0, 0] = pointA[0];
+                result[0, 1] = pointA[1];
+                result[1, 0] = pointB[0];
+                result[1, 1] = pointB[1];
+            }
         return result;
     }
 }
