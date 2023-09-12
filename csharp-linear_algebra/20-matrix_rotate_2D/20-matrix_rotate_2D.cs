@@ -18,7 +18,6 @@ class MatrixMath
             return error;
 
         double[,] result = new double[2, 2];
-        double sum = 0.0;
         double[,] rotationMatrix = new double[2, 2]
             {
                 {Math.Cos(angle), Math.Sin(angle)},
