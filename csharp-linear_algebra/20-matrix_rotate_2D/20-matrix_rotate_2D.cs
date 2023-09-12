@@ -20,8 +20,8 @@ class MatrixMath
         double[,] result = new double[2, 2];
         double[,] rotationMatrix = new double[2, 2]
             {
-                {Math.Cos(angle), -Math.Sin(angle)},
-                {Math.Sin(angle), Math.Cos(angle)}
+                {Math.Cos(angle), Math.Sin(angle)},
+                {-Math.Sin(angle), Math.Cos(angle)}
             };
 
         for (int i = 0; i < rotationMatrix.GetLength(0); i++)
@@ -30,9 +30,9 @@ class MatrixMath
             {
                 result[i, j] = 0;
 
-                for (int k = 0; k < rotationMatrix.GetLength(1); k++)
+                for (int k = 0; k < matrix.GetLength(1); k++)
                 {
-                    result[i, j] += rotationMatrix[i, k] * matrix[k, j];
+                    result[i, j] += Math.Round(matrix[i, k] * rotationMatrix[k, j], 2);
                 }
             }
         }
