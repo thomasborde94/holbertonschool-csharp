@@ -35,12 +35,7 @@ class MatrixMath
             {Math.Round(1 / det * matrix[1,1], 2), Math.Round(1 / det * -matrix[0,1], 2)},
             {Math.Round(1 / det * -matrix[1,0], 2), Math.Round(1 / det * matrix[0,0], 2)}
         };
-        for (int i = 0; i < 2; i++)
-        {
-            for (int j = 0; j < 2; j++)
-                if (inversedMatrix[i, j] == double.PositiveInfinity || inversedMatrix[i, j] == double.NegativeInfinity)
-                    inversedMatrix[i, j] = 0;
-        }
+        
         return inversedMatrix;
     }
 }
