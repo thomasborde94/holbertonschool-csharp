@@ -59,10 +59,10 @@ class MatrixMath
             return -1;
 
         if (matrix.Length == 4)
-            return Determinant2D(matrix);
+            return Math.Round(Determinant2D(matrix), 2);
 
         if (matrix.Length == 9)
-            return Determinant3D(matrix);
+            return Math.Round(Determinant3D(matrix), 2);
         
         return -1;
     }
