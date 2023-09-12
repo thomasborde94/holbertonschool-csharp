@@ -32,7 +32,7 @@ class MatrixMath
 
         double[,] inversedMatrix = new double[2,2]
         {
-            {Math.Round(1 / det * matrix[1,1], 2), 1 / Math.Round(det * -matrix[0,1], 2)},
+            {Math.Round(1 / det * matrix[1,1], 2), Math.Round(1 / det * -matrix[0,1], 2)},
             {Math.Round(1 / det * -matrix[1,0], 2), Math.Round(1 / det * matrix[0,0], 2)}
         };
         for (int i = 0; i < 2; i++)
