@@ -32,7 +32,7 @@ In C#, multi-tasking can be achieved using various techniques, including multi-t
 * Sleep: blocks the current thread for a specified time period.
 * SpinWait: To make a thread wait the number of time specified in the parameters.
 * Start: starts a thread
-* Suspend: suspends a thread.
+* Suspend: suspends a thread.<br>
 
-<br>
-Documentation gathered with the help of [The DotNet Office youtube channel](https://www.youtube.com/@TheDotNetOffice).
+
+Documentation gathered with the help of the [DotnetOfficeYoutubeChannel](https://www.youtube.com/@TheDotNetOffice)
