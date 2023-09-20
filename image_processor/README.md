@@ -36,3 +36,10 @@ In C#, multi-tasking can be achieved using various techniques, including multi-t
 
 
 Documentation gathered with the help of the [DotnetOfficeYoutubeChannel](https://www.youtube.com/@TheDotNetOffice)
+
+## System.Drawing
+### Bitmap
+* A Bitmap object represents a 2D grid of pixels, where each pixel contains color information.
+* A Bitmap has a defined width and height, often referred to as its resolution. For example, a 640x480 Bitmap has a width of 640 pixels and a height of 480 pixels.
+* You can access individual pixels in a Bitmap object using coordinates (x, y). For example, bmp.GetPixel(x, y) retrieves the color of the pixel at position (x, y), and bmp.SetPixel(x, y, color) sets the color of a pixel at that position.
+ * Bitmap objects can be loaded from image files (e.g., JPEG, PNG) and saved back to files. This allows you to read and write images in various formats.
