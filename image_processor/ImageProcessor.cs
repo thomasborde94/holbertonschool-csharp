@@ -2,8 +2,15 @@
 using System.Drawing;
 using System.IO;
 
+/// <summary>
+/// Defines ImageProcessor class
+/// </summary>
 class ImageProcessor
     {
+        /// <summary>
+        /// Inverses an image
+        /// </summary>
+        /// <param name="filenames">files to inverse</param>
         public static void Inverse(string[] filenames)
         {
 
