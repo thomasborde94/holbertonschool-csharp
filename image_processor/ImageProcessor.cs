@@ -19,16 +19,13 @@ class ImageProcessor
             {
                 string newFilename = Path.GetFileNameWithoutExtension(filename) + "_inverse.jpg";
                 Bitmap bmp = new Bitmap(filename);
-
                 int width = bmp.Width;
                 int height = bmp.Height;
-
                 for (int y = 0; y < height; y++)
                 {
                     for (int x = 0; x < width; x++)
                     {
                         Color p = bmp.GetPixel(x, y);
-
                         int a = p.A;
                         int r = p.R;
                         int g = p.G;
@@ -37,18 +34,15 @@ class ImageProcessor
                         int rNegativ = 255 - r;
                         int gNegativ = 255 - g;
                         int bNegativ = 255 - b;
-
                         bmp.SetPixel(x, y, Color.FromArgb(a, rNegativ, gNegativ, bNegativ));
                     }
                 }
-
-                if (newFilename.Split("/").Length > 1)
+                                if (newFilename.Split("/").Length > 1)
                     bmp.Save(newFilename.Split("/")[1]);
                 else
                     bmp.Save(newFilename);
             });
         }
-
         /// <summary>
         /// Turns a colored image into grayscale
         /// </summary>
