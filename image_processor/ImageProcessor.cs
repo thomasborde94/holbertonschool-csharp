@@ -55,7 +55,8 @@ class ImageProcessor
         /// <param name="filenames">files to modify</param>
         public static void Grayscale(string[] filenames)
         {
-            foreach (string filename in filenames)
+
+            Parallel.ForEach(filenames, filename =>
             {
                 string newFilename = filename.Split('.')[0] + "_grayscale.jpg";
                 Bitmap bmp = new Bitmap(filename);
@@ -78,6 +79,6 @@ class ImageProcessor
                     bmp.Save(newFilename.Split("/")[1]);
                 else
                     bmp.Save(newFilename);
-            }
+            });
         }
     }
