@@ -76,6 +76,11 @@ class ImageProcessor
             });
         }
 
+        /// <summary>
+        /// creates an bw image based on a threshold
+        /// </summary>
+        /// <param name="filenames">files to modify</param>
+        /// <param name="threshold">threshold</param>
         public static void BlackWhite(string[] filenames, double threshold)
         {
             Parallel.ForEach(filenames, filename =>
@@ -108,4 +113,29 @@ class ImageProcessor
                     bmp.Save(newFilename);
             });
         }
+
+        /// <summary>
+        /// thumbnails an image
+        /// </summary>
+        /// <param name="filenames">files to modify</param>
+        /// <param name="height">height of the thumbnail</param>
+        public static void Thumbnail(string[] filenames, int height)
+        {
+            Parallel.ForEach(filenames, filename =>
+            {
+                string newFilename = Path.GetFileNameWithoutExtension(filename) + "_th" + Path.GetExtension(filename);
+                Bitmap bmp = new Bitmap(filename);
+
+                int originalWidth = bmp.Width;
+                int originalHeight = bmp.Height;
+
+                // Calculate new width while maintaining the aspect ratio
+                int width = (int)((double)originalWidth / originalHeight * height);
+
+                // Create a new Bitmap for the thumbnail
+                Bitmap thumbnail = new Bitmap(bmp, new Size(width, height));
+
+                thumbnail.Save(newFilename);
+            });
+    }
     }
