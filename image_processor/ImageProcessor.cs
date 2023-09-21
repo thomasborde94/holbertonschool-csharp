@@ -75,4 +75,37 @@ class ImageProcessor
                     bmp.Save(newFilename);
             });
         }
+
+        public static void BlackWhite(string[] filenames, double threshold)
+        {
+            Parallel.ForEach(filenames, filename =>
+            {
+                string newFilename = Path.GetFileNameWithoutExtension(filename) + "_bw.jpg";
+                Bitmap bmp = new Bitmap(filename);
+
+                int width = bmp.Width;
+                int height = bmp.Height;
+
+                for (int y = 0; y < height; y++)
+                {
+                    for (int x = 0; x < width; x++)
+                    {
+                        Color pixel = bmp.GetPixel(x, y);
+
+                        // Calculate grayscale value
+                        int grayscaleValue = (int)((pixel.R + pixel.G + pixel.B) / 3.0);
+
+                        // Check against the threshold to determine black or white
+                        Color blackWhitePixel = (grayscaleValue <= threshold) ? Color.Black : Color.White;
+
+                        bmp.SetPixel(x, y, blackWhitePixel);
+                    }
+                }
+
+                if (newFilename.Split("/").Length > 1)
+                    bmp.Save(newFilename.Split("/")[1]);
+                else
+                    bmp.Save(newFilename);
+            });
+        }
     }
